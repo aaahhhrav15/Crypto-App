@@ -1,0 +1,63 @@
+.coin-detail{
+    padding-left: 120px;
+    padding-top: 50px;
+  }
+  .time{
+      font-weight: bold;
+  }
+  
+  .image img{
+      margin-top: 60px;
+  }
+  
+  .name{
+      font-weight: bold;
+      font-size: 27px;
+      margin-top: 50px;
+  }
+  .price{
+      font-weight: bold;
+      font-size: 22px;
+      margin-top: 10px;
+  }
+  .profit{
+      margin-top: 10px;
+      margin-left: 7px;
+      display : flex;
+      align-items : center;
+      
+  }
+  
+  .rank{
+      font-weight: bold;
+      font-size: 27px;
+      margin-top: 20px;
+      margin-left: 5px;
+  }
+  
+  .info p{
+      margin-top: 15px;
+     
+  }
+  
+  .info{
+      width: 20rem;
+  }
+  .btn button{
+      height: 2rem;
+      background-color: orange;
+      border: none;
+      width: 5rem;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      margin-left: 10px;
+  }
+
+  .coin-detail{
+    display: flex;
+    justify-content: center;
+  }
+  .chart{
+    width:80rem;
+  }

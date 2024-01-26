@@ -1,0 +1,11 @@
+button{
+    height: 3rem;
+    background-color: orange;
+    border: none;
+    width: 6rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.btnss{
+    margin-left:0rem;
+}
