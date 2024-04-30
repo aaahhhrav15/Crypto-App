@@ -10,6 +10,7 @@ import { IoPulseOutline } from "react-icons/io5";
 import CoinChart from './CoinChart';
 
 
+
 const CoinDetails = () => {
   const [coin, setCoin] = useState([]);
   const {id} = useParams();
@@ -39,30 +40,26 @@ const CoinDetails = () => {
     <>
     {
       loading? <Loader /> :<> 
-          
           <div className='coin-detail'>
             <div className="coin-info">
               <div className="btn">
                   <button onClick={()=>setCurrency("inr")}>INR</button> 
                   <button onClick={()=>setCurrency("usd")}>USD</button> 
               </div>
-              <div className="time">
-                  {coin.last_updated}
-              </div>
-              <div className="image">
+              <div className="image coinimage">
                   <img height={"150px"} src={coin.image.large} alt="" />
               </div>
-              <div className="name">
+              <div className="name coinname">
                   {coin.name}
               </div>
-              <div className="price">
+              <div className="price coinprice">
                   {currency === "inr" ? "Rs. " : "$ "}{coin.market_data.current_price[currency]}
               </div>
-              <div className="profit">
+              <div className="profit coinprofit">
                  {profit ? <BiSolidUpArrow color='green'/> : <BiSolidDownArrow color='red'/> }{"  "}  
                  { coin.market_data.price_change_percentage_24h_in_currency.inr} %
               </div>
-              <div className="rank">
+              <div className="rank coinrank">
                  <IoPulseOutline color='orange'/> # {coin.market_cap_rank}
               </div>
               <div className="info">

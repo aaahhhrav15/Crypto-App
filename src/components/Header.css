@@ -8,10 +8,13 @@
 }
 .navbar ul li{
     list-style : none;
+    color : white;
 }
 .navbar ul li a{
     text-decoration:none;
     margin-left:15rem;
+    color:white;
+    font-size: 1.2rem;
 }
 .navbar ul {
     display:flex;
